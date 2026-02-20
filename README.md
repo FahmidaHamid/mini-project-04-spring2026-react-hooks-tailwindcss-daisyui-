@@ -118,16 +118,19 @@ function App() {
   }
   useEffect(() => {
     fetchData();
-  }, []); // load the beginning
+  }, []);
 
   return (
     <>
-      {isLoading && <MyDataLoader />}
-      {!isLoading && (
-        <>
-          <Body />
-          {data && <DisplayData localdata={data} />}
-        </>
+      {isLoading && <h1 className="text-7xl">Loading data ... please wait</h1>}
+      {!isLoading && data && (
+        <ul className="m-10 p-3">
+          {data.map((d, index) => (
+            <li key={index} className="text-3xl">
+              {d.name}
+            </li>
+          ))}
+        </ul>
       )}
     </>
   );

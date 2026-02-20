@@ -24,7 +24,22 @@
 
   - More examples: https://www.w3schools.com/react/react_useeffect.asp (please check before moving forward)
 
-b) `useState`: The React useState Hook allows us to track state in a function component. State generally refers to data or properties that need to be tracking in an application.
+    b) `useState`: The React useState Hook allows us to track state in a function component. State generally refers to data or properties that need to be tracking in an application.
+
+2. Styling Web Apps:
+
+   a) **Semantic CSS**: It focuses on naming classes based on the content's meaning or purpose (e.g., .site-header, .main-navigation), keeping the HTML clean and the styling logic separate in a dedicated CSS file.
+   - **Advantages:**
+     - **Clean HTML:** Keeps the HTML markup clean and focused on structure and content.
+     - **Strong Separation of Concerns:** Styles are kept entirely separate from the content in dedicated .css files, which aligns with traditional web development principles.
+
+     - **Ease of Theming/Reskinning:** A single stylesheet can be swapped out to completely change the look of an entire website.
+     - **Standardized Components:** Component-based frameworks offer consistent, pre-built UI elements that reduce design decision fatigue and make onboarding new developers easier.
+
+   - **Disadvantages:**
+     - **CSS Bloat:** Can lead to large CSS files as projects grow, sometimes with unused or overridden styles.
+     - **Customization Difficulties:** Deviating from a component framework's default design can require significant effort, often involving complex overrides or !important rules.
+     - **"Naming Things" Problem:** Developers often spend time debating class names and managing naming collisions.
 
 ### ToDos:
 

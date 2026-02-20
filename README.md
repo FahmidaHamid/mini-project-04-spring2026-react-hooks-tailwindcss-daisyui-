@@ -112,22 +112,21 @@ function App() {
       if (!response.ok) throw new Error("failed to fetch");
 
       const myData = await response.json();
-      setData(myData); // data is loaded properly
-      setError(null); // no error
-
-      //console.log(data); //--> testing
+      setData(myData);
+      setError(null);
+      //console.log(data);
     } catch (err) {
-      setError(err); // error
+      setError(err);
       //console.log(err);
-      setData(null); // data is still null
+      setData(null);
     } finally {
-      setIsLoading(false); // loading attempted and done
+      setIsLoading(false);
     }
   }
 
   useEffect(() => {
     fetchData();
-  }, []); // [] -> dependency array, if empty, then the effect only takes place at the beginning (first render)
+  }, []);
 
   return (
     <>

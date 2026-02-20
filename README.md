@@ -116,6 +116,7 @@ function App() {
       setIsLoading(false);
     }
   }
+
   useEffect(() => {
     fetchData();
   }, []);
